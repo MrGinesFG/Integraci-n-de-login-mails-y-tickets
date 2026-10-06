@@ -35,7 +35,9 @@
                         </flux:button>
                         @can('crear tickets')
                         <flux:button href="{{ route('tickets.create') }}" class="!bg-black/20 !text-white border border-white/30 hover:!bg-white/20 backdrop-blur-md hover:!scale-105 transition-all rounded-xl">
-                            <flux:icon.plus class="w-4 h-4 mr-2" /> Nuevo Ticket
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg> Nuevo Ticket
                         </flux:button>
                         @endcan
                     </div>
@@ -45,7 +47,9 @@
                 <div class="hidden md:flex flex-shrink-0 relative w-40 h-40 animate-in zoom-in fade-in duration-700 delay-300">
                     <div class="absolute inset-0 bg-white/10 rounded-full blur-2xl animate-pulse"></div>
                     <div class="relative h-full w-full rounded-full border border-white/20 bg-white/10 backdrop-blur-xl flex items-center justify-center shadow-2xl group-hover:rotate-12 transition-transform duration-700">
-                        <flux:icon.rocket class="w-16 h-16 text-white drop-shadow-lg" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-white drop-shadow-lg">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.36c-3.12 0-5.64-2.53-5.64-5.64 0-2.61 1.76-4.86 4.18-5.5m11.19-5.9c-1.57 0-3.05.61-4.16 1.72-2.19 2.19-2.25 5.7-.15 7.96l2.16 2.16c.45.45 1.18.45 1.63 0l2.16-2.16c2.25-2.25 2.25-5.9 0-8.15-1.11-1.11-2.59-1.72-4.16-1.72zm-6.19 7.02l-1.06 1.06c-1.14 1.14-2.99 1.14-4.13 0l-1.06-1.06c-1.14-1.14-1.14-2.99 0-4.13l1.06-1.06c1.14-1.14 2.99-1.14 4.13 0l1.06 1.06c1.14 1.14 1.14 2.99 0 4.13z" />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -61,7 +65,9 @@
                 <div class="relative flex items-start justify-between">
                     <div class="space-y-4">
                         <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-500 shadow-sm border border-blue-100 dark:border-blue-800/50">
-                            <flux:icon.ticket variant="solid" class="w-6 h-6" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z" />
+                            </svg>
                         </div>
                         <div>
                             <p class="text-sm font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">Activos</p>
@@ -81,7 +87,9 @@
                 <div class="relative flex items-start justify-between">
                     <div class="space-y-4">
                         <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-500 shadow-sm border border-emerald-100 dark:border-emerald-800/50">
-                            <flux:icon.check-circle variant="solid" class="w-6 h-6" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
                         </div>
                         <div>
                             <p class="text-sm font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">Resueltos</p>
@@ -101,7 +109,9 @@
                 <div class="relative flex items-start justify-between">
                     <div class="space-y-4">
                         <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-50 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-500 shadow-sm border border-amber-100 dark:border-amber-800/50">
-                            <flux:icon.user variant="solid" class="w-6 h-6" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                            </svg>
                         </div>
                         <div>
                             <p class="text-sm font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">Mi Gestión</p>
@@ -120,12 +130,16 @@
                 <div class="flex items-center justify-between mb-8">
                     <div>
                         <h3 class="text-2xl font-bold text-zinc-900 dark:text-white flex items-center gap-2">
-                            <flux:icon.clock class="w-6 h-6 text-zinc-400" /> Actividad Reciente
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-zinc-400">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg> Actividad Reciente
                         </h3>
                         <p class="text-zinc-500 dark:text-zinc-400 mt-1 text-sm">Últimos tickets creados en la plataforma</p>
                     </div>
                     <flux:button size="sm" variant="ghost" href="{{ route('tickets.index') }}" class="group hidden sm:flex">
-                        Ver todos <flux:icon.arrow-right class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                        Ver todos <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
                     </flux:button>
                 </div>
 
@@ -137,7 +151,9 @@
                 @if($recentTickets->isEmpty())
                     <div class="flex flex-col items-center justify-center py-16 text-center animate-in zoom-in duration-500">
                         <div class="rounded-full bg-zinc-100 dark:bg-zinc-800 p-6 mb-6">
-                            <flux:icon.inbox class="h-10 w-10 text-zinc-400" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-10 w-10 text-zinc-400">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 12.838c-.066.214-.1.437-.1.661z" />
+                            </svg>
                         </div>
                         <h4 class="text-lg font-semibold text-zinc-900 dark:text-white">Bandeja Vacía</h4>
                         <p class="mt-2 text-zinc-500 dark:text-zinc-400 max-w-sm">No hay tickets registrados en el sistema por el momento.</p>
@@ -156,9 +172,13 @@
                                     <div class="flex items-center gap-4 w-full sm:w-auto">
                                         <div class="hidden sm:flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br {{ $ticket->estado === 'abierto' ? 'from-blue-100 to-indigo-100 dark:from-blue-900/40 dark:to-indigo-900/40 text-blue-600' : 'from-zinc-100 to-zinc-200 dark:from-zinc-800 dark:to-zinc-700 text-zinc-500' }}">
                                             @if($ticket->estado === 'abierto')
-                                                <flux:icon.envelope-open class="w-6 h-6" />
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                                </svg>
                                             @else
-                                                <flux:icon.archive-box class="w-6 h-6" />
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+                                                </svg>
                                             @endif
                                         </div>
                                         <div>
@@ -166,7 +186,9 @@
                                                 {{ $ticket->titulo }}
                                             </h4>
                                             <p class="text-sm text-zinc-500 dark:text-zinc-400 mt-1 flex items-center gap-2">
-                                                <flux:icon.user class="w-3.5 h-3.5" /> {{ $ticket->user->name }}
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3.5 h-3.5">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                                </svg> {{ $ticket->user->name }}
                                                 <span class="text-zinc-300 dark:text-zinc-600">&bull;</span>
                                                 {{ $ticket->created_at->diffForHumans() }}
                                             </p>
@@ -176,7 +198,9 @@
                                         <flux:badge size="sm" color="{{ $ticket->estado === 'abierto' ? 'green' : 'zinc' }}" class="uppercase tracking-wider font-bold">
                                             {{ $ticket->estado }}
                                         </flux:badge>
-                                        <flux:icon.chevron-right class="w-5 h-5 text-zinc-400 group-hover:text-blue-500 group-hover:translate-x-1 transition-all ml-4 sm:hidden block" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-zinc-400 group-hover:text-blue-500 group-hover:translate-x-1 transition-all ml-4 sm:hidden block">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                        </svg>
                                     </div>
                                 </div>
                             </a>
