@@ -33,6 +33,9 @@ class RegisterController extends Controller
             'password' => $validated['password'],
         ]);
 
+        // Asignar rol por defecto
+        $user->assignRole('usuario');
+
         // 3. Enviar correo de bienvenida mediante Brevo SMTP
         Mail::to($user->email)->send(new WelcomeUserMail(['name' => $user->name]));
 
